@@ -1,10 +1,21 @@
+body{
+  margin:15%;
+  margin-top: 10px;;
+}
 .nav{
-  list-style-type: none;
   display: flex;
   justify-content: space-around;;
   border: 1px solid black;
 }
+ul{
+  list-style-type: none;
+}
 
 .nav > li{
   display:inline
+}
+
+.github{
+  width:50%;
+  border: 1px solid black;
 }
