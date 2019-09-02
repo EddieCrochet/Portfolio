@@ -1,8 +1,14 @@
 body{
   margin:15%;
-  margin-top: 10px;;
+  margin-top: 10px;
+  background-image: url("ACA_Headshot5_2019.jpg");
+  background-size: cover;
+}
+main{
+  color:white;
 }
 .nav{
+  color:white;
   display: flex;
   justify-content: space-around;;
   border: 1px solid black;
