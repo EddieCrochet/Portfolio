@@ -3,6 +3,7 @@ body{
   margin-top: 10px;
   background-image: url("ACA_Headshot5_2019.jpg");
   background-size: cover;
+  font-family: Verdana,Geneva,sans-serif;
 }
 main{
   color:white;
@@ -10,8 +11,10 @@ main{
 .nav{
   background-color: rgb(102, 225, 127, .7);
   color:white;
+  height:30px;
   display: flex;
-  justify-content: space-around;;
+  align-items: center;
+  justify-content: space-around;
   border: 1px solid black;
   border-radius: 15px;
 }
@@ -23,14 +26,34 @@ ul{
 }
 .piece{
   border: 1px solid black;
-  background-color: rgb(102, 225, 127, .5);
+  background-color: rgb(172, 0, 230, .6);
   border-radius: 15px;
   text-align: center;
-  width:30%;
+  width:35%;
+}
+.github{
+  padding-top:2%;
 }
 .gitpic{
   border-radius: 15px;
 }
 .preview{
   float:right;
+  font-family:Times;
 }
+footer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:30px;
+}
+
+/*
+for media query
+.PVList{
+  text-align: left;
+}*/
