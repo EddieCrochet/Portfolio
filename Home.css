@@ -51,9 +51,9 @@ footer{
   right:0;
   height:30px;
 }
-
-/*
-for media query
-.PVList{
-  text-align: left;
-}*/
+@media (max-width: 600px)
+{
+  .preview{
+    float:none;
+  }
+}
