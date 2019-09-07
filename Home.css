@@ -12,8 +12,8 @@ nav{
   text-align: center;
 }
 .nav{
-  background-color: rgb(102, 225, 127, .7);
   color:white;
+  background-color: rgb(102, 225, 127, .7);
   height:30px;
   display: flex;
   align-items: center;
@@ -24,7 +24,6 @@ ul{
   list-style-type: none;
 }
 .piece{
-
   background-color: rgb(102, 225, 127, .7);
   border-radius: 15px;
   text-align: center;
@@ -64,9 +63,24 @@ footer{
     margin:25px;
   }
   .nav{
-    height:300px;
+    height:150px;
     flex-direction: column;
-    width:75%;
-    margin-left: 8%;
+    background: none;
+    width: 85%%;
+  }
+  nav{
+      margin-right: 14%;
+  }
+  .nav > li{
+    background-color: rgb(102, 225, 127, .7);
+    height:30px;
+    border-radius: 15px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer{
+    position:inherit;
   }
 }
