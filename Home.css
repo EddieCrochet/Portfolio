@@ -40,6 +40,10 @@ ul{
   float:right;
   font-family:Times;
 }
+.PVList{
+  margin-right: 10%;
+  padding-bottom: 2%;
+}
 footer{
   display:flex;
   align-items: center;
@@ -63,7 +67,7 @@ footer{
     margin:25px;
   }
   .nav{
-    height:150px;
+    height:200px;
     flex-direction: column;
     background: none;
     width: 85%%;
@@ -82,5 +86,6 @@ footer{
   }
   footer{
     position:inherit;
+    height:40px;
   }
 }
