@@ -1,0 +1,72 @@
+body{
+  margin:5%;
+  margin-top: 10px;
+  background-image: url("ACA_Headshot4_2019.jpg");
+  background-size: cover;
+  font-family: Verdana,Geneva,sans-serif;
+}
+main{
+  color:white;
+}
+nav{
+  text-align: center;
+}
+.nav{
+  color:white;
+  background-color: rgb(102, 225, 127, .7);
+  height:30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 15px;
+}
+ul{
+  list-style-type: none;
+}
+.piece{
+  background-color: rgb(102, 225, 127, .7);
+  border-radius: 15px;
+  text-align: center;
+  width:35%;
+}
+footer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:30px;
+}@media (max-width: 600px)
+{
+  body{
+    background-size:auto;
+  }
+  .piece{
+    width:85%;
+    margin:25px;
+  }
+  .nav{
+    height:200px;
+    flex-direction: column;
+    background: none;
+    width: 85%%;
+  }
+  nav{
+      margin-right: 14%;
+  }
+  .nav > li{
+    background-color: rgb(102, 225, 127, .7);
+    height:30px;
+    border-radius: 15px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer{
+    position:inherit;
+    height:40px;
+  }
+}
