@@ -1,7 +1,7 @@
 body{
   margin:5%;
   margin-top: 10px;
-  background-image: url("ACA_Headshot4_2019.jpg");
+  background-image: url("background.jpg");
   background-size: cover;
   font-family: Verdana,Geneva,sans-serif;
 }
@@ -13,7 +13,7 @@ nav{
 }
 .nav{
   color:white;
-  background-color: rgb(102, 225, 127, .7);
+  background-color: rgb(102, 225, 127, .8);
   height:30px;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@ ul{
   list-style-type: none;
 }
 .piece{
-  background-color: rgb(102, 225, 127, .7);
+  background-color: rgb(102, 225, 127, .8);
   border-radius: 15px;
   text-align: center;
   width:35%;
