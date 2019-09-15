@@ -38,15 +38,14 @@ main{
   grid-column-gap: 5%;
   grid-row-gap: 50px;;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr auto;
+  grid-auto-rows: auto auto;
   grid-template-areas:
   "about picture"
-  "foot foot";
+  "foot picture";
 }
 .i{
   background-color: rgb(102, 225, 127, .8);
   border-radius: 15px;
-  text-align: center;
 }
 .picture{
   width:100%;
@@ -55,6 +54,7 @@ main{
 }
 .about{
   grid-area: about;
+  padding:20px;
 }
 .foot{
   grid-area:foot;
@@ -63,10 +63,6 @@ main{
 {
   body{
     background-size: cover;
-  }
-  .piece{
-    width:85%;
-    margin:25px;
   }
   .nav{
     height:200px;
