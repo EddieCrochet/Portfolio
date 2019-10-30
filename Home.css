@@ -54,8 +54,7 @@ footer{
   right:0;
   height:30px;
 }
-@media (max-width: 600px)
-{
+@media (max-width: 600px){
   body{
     background-size:auto;
   }
@@ -63,17 +62,12 @@ footer{
     float:none;
   }
   .piece{
-    width:85%;
-    margin:25px;
+    width:100%;
   }
   .nav{
     height:200px;
     flex-direction: column;
     background: none;
-    width: 85%%;
-  }
-  nav{
-      margin-right: 14%;
   }
   .nav > li{
     background-color: rgb(102, 225, 127, .7);
@@ -87,5 +81,10 @@ footer{
   footer{
     position:inherit;
     height:40px;
+  }
+  main{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
