@@ -28,6 +28,7 @@ ul{
   border-radius: 15px;
   text-align: center;
   width:35%;
+  border: 1px solid purple;
 }
 .github{
   padding-top:2%;
@@ -68,6 +69,7 @@ footer{
     height:200px;
     flex-direction: column;
     background: none;
+    border:none;
   }
   .nav > li{
     background-color: rgb(102, 225, 127, .7);
@@ -77,6 +79,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid purple;
   }
   footer{
     position:inherit;
