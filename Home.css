@@ -33,6 +33,7 @@ ul{
 .github{
   padding-top:2%;
   padding-bottom: 1%;
+  margin-top: 10px;
 }
 .gitpic{
   border-radius: 15px;
@@ -54,12 +55,22 @@ footer{
   right:0;
   height:30px;
 }
+@media (max-width: 1150px){
+  .nav{
+    width:75%;
+  }
+  .preview{
+    margin-top: 100px;
+    width:60%;
+  }
+}
 @media (max-width: 600px){
   body{
     background-size:auto;
   }
   .preview{
     float:none;
+    margin-top:10px;
   }
   .piece{
     width:100%;
@@ -83,6 +94,7 @@ footer{
   footer{
     position:inherit;
     height:40px;
+    margin-top: 10px;
   }
   main{
     display:flex;
