@@ -46,6 +46,7 @@ main{
 .i{
   background-color: rgb(102, 225, 127, .8);
   border-radius: 15px;
+  border: 1px solid purple;
 }
 .picture{
   width:100%;
@@ -69,9 +70,7 @@ main{
     flex-direction: column;
     background: none;
     width: 85%;
-  }
-  nav{
-      margin-right: 14%;
+    border: none; 
   }
   .nav > li{
     background-color: rgb(102, 225, 127, .7);
@@ -81,6 +80,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid purple;
   }
   footer{
     height:40px;
