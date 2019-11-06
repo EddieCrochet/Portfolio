@@ -47,14 +47,16 @@ main{
   background-color: rgb(102, 225, 127, .8);
   border-radius: 15px;
   border: 1px solid purple;
+  margin-top: 10px;
 }
 .picture{
-  width:100%;
+  width:90%;
   content: url("ACA_Headshot4_2019.jpg");
   grid-area: picture;
 }
 .about{
   grid-area: about;
+  display: inline-block;
   padding:20px;
 }
 .foot{
@@ -62,6 +64,9 @@ main{
 }
 @media (max-width: 600px)
 {
+  .picture{
+    width:100%;
+  }
   body{
     background-size: cover;
   }
@@ -69,7 +74,6 @@ main{
     height:200px;
     flex-direction: column;
     background: none;
-    width: 85%;
     border: none; 
   }
   .nav > li{
