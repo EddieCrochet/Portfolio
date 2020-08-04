@@ -1,7 +1,7 @@
 body{
     margin:5%;
     margin-top: 10px;
-    background-image: url("ACA_Headshot5_2019.jpg");
+    background-image: url("background.jpg");
     background-size: cover;
     font-family: Verdana,Geneva,sans-serif;
   }
@@ -19,6 +19,12 @@ body{
     align-items: center;
     justify-content: space-around;
     border-radius: 15px;
+  }
+  .i{
+    background-color: rgb(102, 225, 127, .8);
+    border-radius: 15px;
+    border: 1px solid purple;
+    margin-top: 10px;
   }
   ul{
     list-style-type: none;
