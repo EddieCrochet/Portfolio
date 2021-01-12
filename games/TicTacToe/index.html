@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <!--bootstrap & style links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="tictactoe.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bckgrnd">
+        <h1>Welcome to Tic Tac Toe</h1>
+        <p>Get ready to play!</p>
+        <!-- uses the built-in onclick attribute to call the resetBoard function -->
+        <button onclick="resetBoard()" type="button" class="btn btn-primary btn-lg" name="button">Restart</button>
+        <form id="playersNames">
+          <caption>Set names of players here: </caption><br>
+          <label for="pOne">Player One (<b>X's</b>): </label>
+          <input onchange="handleNames()" type="text" id="pOne" size="2">
+          <label for="pTwo">Player Two (<b>O's</b>): </label>
+          <input onchange="handleNames()" type="text" id="pTwo" size="2">
+        </form>
+        <div id="scores">
+          <h3><span id="playerOne"></span>: <span id="xScore">0</span></h3>
+          <h3><span id="playerTwo"></span>: <span id="oScore">0</span></h3>
+        </div>
+        <button onclick="resetWins()" type="button" class="btn btn-primary btn-lg">Reset Wins</button>
+      </div>
+
+      <main>
+        <div class="trn bckgrnd">
+          <p>It is <b><span id="playersTurn">not anyone</span></b>'s turn<span id="yet"> yet</span>!</p>
+        </div>
+        <table class="bckgrnd" align="center">
+          <tr>
+            <!-- Each table-data (td) has an id that matches it's position in the array or arrays [0][1] -->
+            <td id='0-0' onclick="handleClick(this)" ></td>
+            <td id='0-1' onclick="handleClick(this)" ></td>
+            <td id='0-2' onclick="handleClick(this)" ></td>
+          </tr>
+          <tr>
+            <!-- onclick calls a function called handleClick and passes itself to it("this") -->
+            <td id='1-0' onclick="handleClick(this)" ></td>
+            <td id='1-1' onclick="handleClick(this)" ></td>
+            <td id='1-2' onclick="handleClick(this)" ></td>
+          </tr>
+          <tr>
+            <td id='2-0' onclick="handleClick(this)" ></td>
+            <td id='2-1' onclick="handleClick(this)" ></td>
+            <td id='2-2' onclick="handleClick(this)" ></td>
+          </tr>
+        </table>
+      </main>
+    </div>
+    <!-- link to JavaScript code -->
+    <script src="dom-tictactoe.js"></script>
+  </body>
+</html>

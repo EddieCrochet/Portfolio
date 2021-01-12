@@ -1,0 +1,66 @@
+body, html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Brush Script MT', cursive;
+    background: linear-gradient(#CC7F99, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  main {
+    text-align: center;
+  }
+  
+  .container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 20px;
+  }
+  
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #playersNames {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .trn {
+    width: 60%;
+    margin: 0 auto;
+  } 
+  
+  td{
+    height:150px;
+    width:150px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 100px;
+  }
+  
+  .bckgrnd {
+    background-color: rgba(204, 204, 204, .4);
+  }
+  
+  .hidden {
+    display:none;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .container {
+      display: block;
+    }
+    .jumbotron {
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      justify-items: center;
+      padding:10px;
+    }
+  }
