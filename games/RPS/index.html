@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        Welcome to Rock, Paper, Scissors
+    </header>
+    <main>
+        Select one!
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <div 
+                    onclick="drpItemSelected(this)" 
+                    class="drpItem"  
+                    id="Rock">Rock
+                </div>
+                <div 
+                    onclick="drpItemSelected(this)" 
+                    class="drpItem"  
+                    id="Paper">Paper
+                </div>
+                <div 
+                    onclick="drpItemSelected(this)" 
+                    class="drpItem"  
+                    id="Scissors">Scissors
+                </div>
+            </div>
+        </div>
+        <section id="sec1">
+            <p id="p1fg" class="hide">You have chosen </p>
+            <h1 id="h1fg"></h1>
+        </section>
+        <section id="sec2">
+            <p id="p2fg" class="hide">And I have chosen: </p>
+            <h1 id="h2fg"></h1>
+        </section>
+        <section id="sec3">
+            <b id="userHand"></b>
+            <span id="actionInGame"></span>
+            <b id="compHand"></b>
+            <p id="result"></p>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
