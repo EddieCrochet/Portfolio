@@ -1,0 +1,51 @@
+.row {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr, 4fr;
+    position: relative;
+    border: 2px solid purple;
+    height: 400px;
+    width: 600px;
+}
+
+.towerContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.tower {
+    height: 5px;
+    width: 180px;
+    background: red;
+}
+
+.block {
+    height: 20px;
+}
+
+.b1 {
+    background-color: blue;
+    width:50px;
+}
+
+.b2 {
+    background-color: pink;
+    width:75px;
+}
+
+.b3 {
+    background-color: green;
+    width:125px;
+}
+
+.b4 {
+    background-color: black;
+    width:175px;
+}
