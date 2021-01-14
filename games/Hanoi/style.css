@@ -14,16 +14,14 @@
     width: 600px;
 }
 
-.towerContainer {
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-}
-
 .tower {
-    height: 5px;
+    height: 250px;
     width: 180px;
-    background: red;
+    background: grey;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-end;
 }
 
 .block {
