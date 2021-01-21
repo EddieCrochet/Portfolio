@@ -3,8 +3,9 @@ body, html {
   }
   
   body {
+    padding:15px;
     font-family: 'Brush Script MT', cursive;
-    background: linear-gradient(#CC7F99, black);
+    background: radial-gradient(#CC7F99, black);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
