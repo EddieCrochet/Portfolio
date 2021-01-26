@@ -4,10 +4,10 @@ html, body {
 }
 
 body {
-    background: radial-gradient(
+    background: linear-gradient(45deg,
     #dbc2c2, #8ca757, #b3b3cc, #779b9b);
     background-size: 150% 150%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
 }
 
 @keyframes gradient {
@@ -30,15 +30,18 @@ body {
 
 .gameContainer {
     display: grid;
+    border-radius: 25px;
     grid-template-columns: auto;
     grid-template-rows: 1fr, 4fr;
     position: relative;
-    border: 2px solid purple;
+    border: 5px outset rgb(113, 116, 255);;
     height: 400px;
     width: 600px;
 }
 
 .tower {
+    border: 3px inset rgb(113, 116, 255);
+    border-radius: 15px;
     height: 250px;
     width: 180px;
     background: grey;
