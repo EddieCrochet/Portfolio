@@ -22,6 +22,19 @@ body {
     }
 }
 
+.topHead {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(
+    #dbc2c2, #8ca757, #b3b3cc, #779b9b);
+    background-size: 150% 150%;
+    animation: gradient 13s ease infinite;
+    border-radius: 25px;
+    border: 5px outset rgb(113, 116, 255);
+}
+
 .row {
     display:flex;
     flex-direction: row;
@@ -29,12 +42,16 @@ body {
 }
 
 .gameContainer {
+    background: linear-gradient(-45deg,
+    #dbc2c2, #8ca757, #b3b3cc, #779b9b);
+    background-size: 150% 150%;
+    animation: gradient 3s ease infinite;
     display: grid;
     border-radius: 25px;
     grid-template-columns: auto;
     grid-template-rows: 1fr, 4fr;
     position: relative;
-    border: 5px outset rgb(113, 116, 255);;
+    border: 5px outset rgb(113, 116, 255);
     height: 400px;
     width: 600px;
 }
