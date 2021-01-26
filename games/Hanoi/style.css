@@ -5,7 +5,7 @@ html, body {
 
 body {
     background: linear-gradient(45deg,
-    #dbc2c2, #8ca757, #b3b3cc, #779b9b);
+    #dbc2c2, #a7d649, #8f8ffc, #84cfcf);
     background-size: 150% 150%;
     animation: gradient 5s ease infinite;
 }
@@ -28,7 +28,7 @@ body {
     align-items: center;
     flex-direction: column;
     background: radial-gradient(
-    #dbc2c2, #8ca757, #b3b3cc, #779b9b);
+        #dbc2c2, #a7d649, #8f8ffc, #84cfcf);
     background-size: 150% 150%;
     animation: gradient 13s ease infinite;
     border-radius: 25px;
@@ -43,7 +43,7 @@ body {
 
 .gameContainer {
     background: linear-gradient(-45deg,
-    #dbc2c2, #8ca757, #b3b3cc, #779b9b);
+    #dbc2c2, #a7d649, #8f8ffc, #84cfcf);
     background-size: 150% 150%;
     animation: gradient 3s ease infinite;
     display: grid;
