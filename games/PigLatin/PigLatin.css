@@ -1,4 +1,19 @@
+body {
+    background-color: #939597;
+}
 textarea {
     outline:none;
     resize:none;
+    background: #F5DF4D;
+}
+.shared {
+    border: 1px solid #F5DF4D;
+}
+article{
+    height:150px;
+    width:550px;
+}
+section{
+    height:150px;
+    width:550px;
 }
