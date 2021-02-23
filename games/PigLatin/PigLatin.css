@@ -6,6 +6,12 @@ body {
 }
 main{
     margin:30px;
+    display:grid;
+    grid-template-columns: repeat(5, 20% [col-start]);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        " . article . . . "
+        " . . . section . ";
 }
 textarea {
     outline:none;
@@ -14,8 +20,10 @@ textarea {
 }
 .shared {
     border: 1px solid #F5DF4D;
+    border-radius: 12px;
     height:350px;
     width:250px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 button {
     background-color: #F5DF4D;
@@ -26,4 +34,11 @@ button {
 button:hover {
     background-color:#ffffcc;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+article{
+    grid-area: article;
+}
+section{
+    grid-area: section;
+    margin-top: -200px;
 }
