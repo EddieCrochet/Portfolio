@@ -2,6 +2,7 @@ html {
     text-align:center;
 }
 body {
+    font-family: Arial, Helvetica;
     background: linear-gradient(#b3b6b9, #7698b4);
 }
 main{
@@ -19,6 +20,7 @@ textarea {
     background: #F5DF4D;
 }
 .shared {
+    padding:25px;
     background-color:#939597;
     border: 1px solid #F5DF4D;
     border-radius: 12px;
