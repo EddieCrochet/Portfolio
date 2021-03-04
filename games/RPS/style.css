@@ -1,7 +1,7 @@
 body { 
     font: 100%  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif;    
     text-align:center; 
-    background-color: #A3E2D9;
+    background-color: #adadad;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 header, main {
     padding:15px;
     margin: 15px;
-    background-color: #D6C7C3;
+    background-color: #ffff97;
     max-width: 500px;
 }
 header {
@@ -20,18 +20,19 @@ main {
 }
 .drpItem {
     background-color: #cccccc;
-    width: 100%;
+    width: 90%;
     padding: 4px 8px;
     text-decoration: none;
     display: block;
     cursor: pointer;
 }
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    border-radius: 15px 50px 30px 5px;
+    padding: 12px;
+    font-size: 20px;
     border: none;
+    background-color: #199700;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .dropdown {
     position: relative;
@@ -62,4 +63,4 @@ section{
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #9bffa2;}
