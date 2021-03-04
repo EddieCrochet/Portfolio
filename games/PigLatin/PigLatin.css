@@ -24,9 +24,11 @@ textarea {
     background-color:#939597;
     border: 1px solid #F5DF4D;
     border-radius: 12px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.mains {
     height:350px;
     width:250px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 button {
     background-color: #F5DF4D;
