@@ -2,7 +2,7 @@ html {
     text-align:center;
 }
 body {
-    background-color: #939597;
+    background: linear-gradient(#b3b6b9, #7698b4);
 }
 main{
     margin:30px;
@@ -19,6 +19,7 @@ textarea {
     background: #F5DF4D;
 }
 .shared {
+    background-color:#939597;
     border: 1px solid #F5DF4D;
     border-radius: 12px;
     height:350px;
