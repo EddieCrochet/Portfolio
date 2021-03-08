@@ -9,15 +9,17 @@ pigLatinArr.length = 0;
 let translate = (english) => {
     //code that will run to translate each individual word
     english.forEach(wrd => {
+        console.log(wrd);
         let vowels = ['a', 'e', 'i', 'o', 'u', 'y', 
         'A', 'E', 'I', 'O', 'U', 'Y'];
         let firstPart;
         let restOfWord;
         let vowelPos;
 
-        for(let i = 0; i < vowels.length; i++){
-            vowelPos = wrd.indexOf(vowels[i]);
-            //get in here to get access to the index of the first vowel of each word
+        // regex to find the vowel position is so much easier
+        vowelPos = wrd.search(/['a' 'e' 'i' 'o' 'u' 'y' 'A' 'E' 'I' 'O' 'U' 'Y']/);
+        console.log(vowelPos);
+
             if(vowelPos === 0){
                 //if the first letter is a vowel
                 if(wrd[0] === 'y'){
@@ -25,20 +27,18 @@ let translate = (english) => {
                     firstPart = wrd.substring(0, 1);
                     restOfWord = wrd.substring(1);
                     pigLatinArr.push(restOfWord + firstPart + "ay");
-                    break;
                 }
                 pigLatinArr.push(wrd+"yay");
-                break;
             }
             else if (vowelPos === -1) {
                 //if there are no vowels
                 pigLatinArr.push(wrd+"ay");
-                break;
             }
-            if(vowelPos !== -1){
-                console.log(vowelPos);
+            else{
+                firstPart = wrd.substring(0, vowelPos);
+                restOfWord = wrd.substring(vowelPos);
+                pigLatinArr.push(restOfWord + firstPart +"ay");
             }
-        }
     });
     console.log(pigLatinArr);
 };
