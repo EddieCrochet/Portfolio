@@ -2,16 +2,13 @@
 
 let convertBtn = document.getElementById('convertBtn');
 let userInput = document.getElementById('userInput');
+//array variable to represent and add each new piglatin word to that we will eventually return
+let pigLatinArr = [];
+pigLatinArr.length = 0;
 
-convertBtn.addEventListener('click', function(){
-    let englishStr = userInput.value.trim();
-    //get entire user's input from the textbox as one long string
-
-    let englishArr = englishStr.split(" ");
-    //split the english string into an array of the words
-
-    //code that will rn to translate each individual word
-    englishArr.forEach(wrd => {
+let translate = (english) => {
+    //code that will run to translate each individual word
+    english.forEach(wrd => {
         let vowels = ['a', 'e', 'i', 'o', 'u', 'y', 
         'A', 'E', 'I', 'O', 'U', 'Y'];
         let firstPart;
@@ -20,10 +17,39 @@ convertBtn.addEventListener('click', function(){
 
         for(let i = 0; i < vowels.length; i++){
             vowelPos = wrd.indexOf(vowels[i]);
-            //get in here to get access to the index of the first value of each word
+            //get in here to get access to the index of the first vowel of each word
+            if(vowelPos === 0){
+                //if the first letter is a vowel
+                if(wrd[0] === 'y'){
+                    // AND if the first letter is specifically a y
+                    firstPart = wrd.substring(0, 1);
+                    restOfWord = wrd.substring(1);
+                    pigLatinArr.push(restOfWord + firstPart + "ay");
+                    break;
+                }
+                pigLatinArr.push(wrd+"yay");
+                break;
+            }
+            else if (vowelPos === -1) {
+                //if there are no vowels
+                pigLatinArr.push(wrd+"ay");
+                break;
+            }
             if(vowelPos !== -1){
                 console.log(vowelPos);
             }
         }
     });
+    console.log(pigLatinArr);
+};
+
+convertBtn.addEventListener('click', function(){
+    let englishStr = userInput.value.trim();
+    //get entire user's input from the textbox as one long string sans spaces arpound
+
+    let englishArr = englishStr.split(" ");
+    //split the english string into an array of the words
+
+    // call the function that will actually translate
+    translate(englishArr);
 });
