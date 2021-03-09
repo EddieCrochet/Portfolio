@@ -24,7 +24,7 @@ let translate = (english) => {
             //puts non letter in designated array
             nonLetters.push(charToRemove);
             //actually removes non letter from original word for storage
-            wrd.replace(charToRemove, " ");
+            wrd = wrd.replace(charToRemove, "");
             console.log(wrd);
         }
 
