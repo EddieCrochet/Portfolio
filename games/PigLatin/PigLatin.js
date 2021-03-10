@@ -20,12 +20,10 @@ let translate = (english) => {
         // removes non letters from the END of the word and THEN runs the translation
         if(lastLetter>'z' || lastLetter<'a'){
             let charToRemove = wrd.slice(wrd.length-1);
-            console.log(wrd);
             //puts non letter in designated array
             nonLetters.push(charToRemove);
             //actually removes non letter from original word for storage
             wrd = wrd.replace(charToRemove, "");
-            console.log(wrd);
         }
 
         // regex to find the vowel position is so much easier
@@ -54,7 +52,9 @@ let translate = (english) => {
             pigLatinArr.push(restOfWord + firstPart +"ay"+nonLetters);
         }
     });
-    console.log(pigLatinArr);
+    let pigLatinStr = pigLatinArr.join(',');
+    pigLatinStr = pigLatinStr.replace
+    console.log(pigLatinStr);
 };
 
 convertBtn.addEventListener('click', function(){
