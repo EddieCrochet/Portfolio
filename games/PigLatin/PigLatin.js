@@ -4,26 +4,30 @@ let convertBtn = document.getElementById('convertBtn');
 let userInput = document.getElementById('userInput');
 //array variable to represent and add each new piglatin word to that we will eventually return
 let pigLatinArr = [];
-pigLatinArr.length = 0;
+let pigLatinStr="";
 
 let translate = (english) => {
     //code that will run to translate each individual word
     english.forEach(word => {
         //only convert to lowercase, we will change first letter to capital later on
         let wrd = word.toLowerCase();
-        console.log(wrd);
         let firstPart;
         let restOfWord;
-        let lastLetter = wrd[wrd.length-1];
+        let charToRemove;
         let nonLetters = [];
         
         // removes non letters from the END of the word and THEN runs the translation
-        if(lastLetter>'z' || lastLetter<'a'){
-            let charToRemove = wrd.slice(wrd.length-1);
-            //puts non letter in designated array
-            nonLetters.push(charToRemove);
-            //actually removes non letter from original word for storage
-            wrd = wrd.replace(charToRemove, "");
+        for(let i = 0; i < wrd.length; i++){
+            console.log(wrd[i]>'z'||wrd[i]<'a');
+            if(wrd[i] >'z' || wrd[i]<'a'){
+                console.log(wrd[i]);
+                charToRemove = wrd[i];
+                //puts non letter in designated array
+                nonLetters.push(charToRemove);
+                //actually removes non letter from original word for storage
+                wrd = wrd.replace(charToRemove, "");
+                console.log(wrd);
+            }
         }
 
         // regex to find the vowel position is so much easier
@@ -52,8 +56,11 @@ let translate = (english) => {
             pigLatinArr.push(restOfWord + firstPart +"ay"+nonLetters);
         }
     });
-    let pigLatinStr = pigLatinArr.join(',');
-    pigLatinStr = pigLatinStr.replace
+    for(let i = 0; i < pigLatinArr.length; i++){
+        // doing this instead of a simpler join keeps the nonletters in the sentence as well as proper spaces
+        pigLatinStr += ` ${pigLatinArr[i]}`
+    }
+    console.log(pigLatinArr);
     console.log(pigLatinStr);
 };
 
