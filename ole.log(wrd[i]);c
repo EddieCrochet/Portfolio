@@ -1,0 +1,475 @@
+[33mcommit 59da386c96374523d4afac43ed734eb8d89eb0ee[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Mar 9 23:23:15 2021 -0600
+
+    switched my logic to remove and then later on replace back punctuation from words fro mchecking only first and last letters to running a for tlooop o check all the letters. I thought that this would taker away my edge case about double punctuaton but it has not helped me there quite yet... still searching for the bug to squash
+
+[33mcommit ff6ef16d3a85db8b669154d3729c0546057ef940[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Mar 9 22:53:54 2021 -0600
+
+    cleaning up and optimizing logic and code
+
+[33mcommit db1ff82757745408bd3a21240d96e861fb65e8e9[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Mar 8 20:52:00 2021 -0600
+
+    GOTIT!!!! Just needed to RESET the word let to the return of the replace :)
+
+[33mcommit bb4c6162d08abde11dfd8a1478da23cb0493e760[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Mar 8 20:45:28 2021 -0600
+
+    atatempting to remove punctuation from the beginning and end of each word
+
+[33mcommit a5ae428b64dc2d933a5d0c7d201389b31a01d9ae[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Mar 8 16:37:36 2021 -0600
+
+    another bug squashed! Got my 'when word starts with a y' condition all fixed and prettied up!
+
+[33mcommit 13a39ab59e36ad08ec5ea4ca637986d0575dbc3b[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Mar 8 16:20:13 2021 -0600
+
+    FIXEDAMAJORBUG!!! I was just thinking too hard - the inner for loop was unneccessary if I simply use a regexp to find the index of the first vowel :)
+
+[33mcommit 00f1a06d9f40b59b80f96745b672a656656d89f8[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Mar 8 14:32:47 2021 -0600
+
+    Solved my problem of enhdless needless looping when I find the vowel! Just needed a couple break statements!! :)
+
+[33mcommit 3d45ca241c67786eeadf932658177537e7875e15[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Mar 8 11:46:48 2021 -0600
+
+    got rid of white space in textarea and now have default text show up upon page load
+
+[33mcommit 66934015a95fef63696ccb0a4f83aa9085a68e80[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Fri Mar 5 13:31:07 2021 -0600
+
+    changed the cursor to a pointer didnt seei t befre and it was bohering me
+
+[33mcommit e88cdbc8438ef9686e1908253708dcc7385d4717[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Fri Mar 5 13:29:47 2021 -0600
+
+    starting with the logic for pig latin js... got acces to each entered word's index of the first vowel so far...
+
+[33mcommit 101a1939344087ac2817056ce682b9f678ff6dd1[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Thu Mar 4 14:41:15 2021 -0600
+
+    added a background to the header in pig latin and restuctured some classes
+
+[33mcommit 30386641f3dd313cc6b2abff42241edc2efc0b62[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Mar 3 20:02:10 2021 -0600
+
+    added font and padding to my pig latin
+
+[33mcommit c01b929403b775905800c18ba500bf2ebc3290d5[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Mar 3 19:57:14 2021 -0600
+
+    changed a font properrty to font-family in my css
+
+[33mcommit daa235df3b0869bb4ede8b9451fd3f4849266b60[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Mar 3 19:52:09 2021 -0600
+
+    renamed my js file... that wasn't a dom js file at all!
+
+[33mcommit e444ec004606f9ec4c1905c85874c95f3ed5581a[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Mar 3 19:48:08 2021 -0600
+
+    restyled button and background an color scheme
+
+[33mcommit ad5b6a668d19f06c5498bc7a4bc3c72642fab7c7[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Mar 3 19:33:25 2021 -0600
+
+    changed cursor to pointer for the drop item selections
+
+[33mcommit 718437362bf48b43c1bb2331c7e27bc88b15b4d7[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Mar 3 19:17:43 2021 -0600
+
+    nicer backgrounds
+
+[33mcommit 55cbd1304043f8838ecd38c588237343149c0d3c[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Feb 22 21:07:17 2021 -0600
+
+    moved around the boxes for prettiness
+
+[33mcommit 05d0d28553490c2bf6c04aa890d0d7ea037df026[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Feb 22 20:56:09 2021 -0600
+
+    made a very pretty button!
+
+[33mcommit cd34b2c58fb8f279fc111dda296192d03e7f8951[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Feb 22 20:30:19 2021 -0600
+
+    Prettying up the css and design and in the mean time found a really slick easy fix to correctly interactively resize tthe textarea size to fit the inputted text!
+
+[33mcommit ed723fcd3e02a3f106381ae8d51e5476425d8828[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Feb 22 20:03:16 2021 -0600
+
+    created the initial textarea and starting html
+
+[33mcommit 44c84002bf9c50a3696ad9c9abc9f246bb860ec4[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Feb 22 19:02:07 2021 -0600
+
+    added files for my pig latin project
+
+[33mcommit 7a50aa8017d1273e017589e13e8dee2b8b926916[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Feb 10 19:49:30 2021 -0600
+
+    slight changes to textual content
+
+[33mcommit 3b0f76651d5813af84e3886cf1b3b72eb5b0d737[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Feb 8 19:50:05 2021 -0600
+
+    adding rules! Making more strict!
+
+[33mcommit 5c1849287bf1eff478c10ab192ca47739a6a4abf[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Jan 26 22:43:57 2021 -0600
+
+    played with my towers of hanoi background some more
+
+[33mcommit 94150274f56555e5a8ac27c11465d0d17b3c7624[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Jan 25 20:46:27 2021 -0600
+
+    more background animation fun!
+
+[33mcommit 2250b2747f2e1534374c1a6f6995ee74023dc6e9[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Jan 25 20:19:00 2021 -0600
+
+    more backgrounds and styles
+
+[33mcommit f10373fbe3a7a1cf1ff0fbb5192c73eadeab0bec[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Jan 25 20:07:14 2021 -0600
+
+    played with background animation more and added nice borders to elements
+
+[33mcommit f6cf538ae41bd6e1ac204f3b1c40b3554cfba37e[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Jan 25 19:59:08 2021 -0600
+
+    added a fun background for my towers
+
+[33mcommit c2bc7bf66a3436515a5cb632e121562257e48099[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Jan 20 19:39:52 2021 -0600
+
+    padded body and background change
+
+[33mcommit 87f48f1ecea4c2f9c22cd919293a001fd889a9aa[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Jan 20 19:01:29 2021 -0600
+
+    personalized css color styles
+
+[33mcommit 62acec8de24c48f1caa9db5aaff7bd5eb6444e99[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Jan 20 18:47:13 2021 -0600
+
+    fixed my nav bar layout across all pages
+
+[33mcommit 9455bc91fb668cd63c4937a0eef1266d42f5a5be[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Thu Jan 14 18:55:48 2021 -0600
+
+    added winning logic to the game!
+
+[33mcommit e2cd14a48a58b727569acc290e25ebaa35b5c3b5[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Thu Jan 14 18:39:43 2021 -0600
+
+    implemented the first 2 rules!
+
+[33mcommit 08d2986beb346c2013252a206c193738b49c775b[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Thu Jan 14 17:04:28 2021 -0600
+
+    the blocks now drag and drop correctly on the towers :)
+
+[33mcommit bba3226d1bdb1080a217d0ce0d608c070cd5bada[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Thu Jan 14 15:18:19 2021 -0600
+
+    getting towers of hanoi designed and layed out
+
+[33mcommit 5eecc7575187c7f87652874ff7c7248ca582120f[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Thu Jan 14 13:59:26 2021 -0600
+
+    getting started with towers of hanoi, but realizing I need a brush up on the drag and drop api. I'll be back here in a bit after I make sure I know what I'm doing.
+
+[33mcommit c7a07b99007d7c642be16817bdea822461d2fd98[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Jan 13 20:19:22 2021 -0600
+
+    created outline for Towers of Hanoi and added it to portfolio.
+
+[33mcommit f492ccfe20208b3079303e8a9df8c8068a1d79af[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Jan 13 20:15:07 2021 -0600
+
+    added fonts that I like
+
+[33mcommit 8f50c2cf51dea8634dec4aac0ab48864c0ace958[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Jan 13 19:45:19 2021 -0600
+
+    added the pig dice game to my games in my portfolio. Still want to play with and personalize the css
+
+[33mcommit 5e1c9ca1312e7dc9dc15478ec820fb0cbf562e23[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Jan 11 19:51:03 2021 -0600
+
+    added tic tac toe to the games pages and fixed a seperate typo i found
+
+[33mcommit e25395cbb86d7044b8da567606134c53ac066f81[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Jan 11 19:42:52 2021 -0600
+
+    added rock paper scissors to the game page!
+
+[33mcommit 1e58ebc8f61b39800d36a580e89a392f779b0ebe[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Jan 11 19:24:41 2021 -0600
+
+    changed my portfolio page to the game page so I can start adding fun games to show off
+
+[33mcommit d23e2b63b328fed0e204e6653f6dd9f2c861a5f7[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Dec 1 19:27:39 2020 -0600
+
+    fixed a merge
+
+[33mcommit ba789f9db09c89b2879a409f3b24a1230f66ecbf[m
+Merge: 740e70a ea8f6b3
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Dec 1 19:25:15 2020 -0600
+
+    more
+
+[33mcommit 740e70af3c76ef4c393038c4c082aad7fdd48b20[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Dec 1 19:23:16 2020 -0600
+
+    simple small update to languages
+
+[33mcommit ea8f6b398f7e033deb38cc44c65d78f72aab1d44[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Mon Aug 3 20:42:14 2020 -0500
+
+    Working on my contact page and getting the site cohesive
+
+[33mcommit 8692231596f38256afb05ad00533b9e5c3cf2dca[m
+Merge: ce86e68 f1089ae
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Jul 22 14:28:03 2020 -0500
+
+    Merge branch 'master' of https://github.com/EddieCrochet/Portfolio
+
+[33mcommit ce86e686c98b52a13493afa7fb2064835826f192[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Jul 22 14:26:57 2020 -0500
+
+    portfolio progress
+
+[33mcommit f1089aec20f125458c9d60ef798d0d37c281bfef[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 12 21:01:45 2019 -0600
+
+    Create README.md
+
+[33mcommit e519c12ac7291953e8da77571524c1ed08bc52ca[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 12 20:59:44 2019 -0600
+
+    Index to index.. maybe github io will work now when this loads up?
+
+[33mcommit c70088285249b5725139ff63bc4a6d980969f130[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 12 20:41:09 2019 -0600
+
+    updated resume
+
+[33mcommit 53f08995ac65ebe76b51769b7422e887eef82d02[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 12 20:31:00 2019 -0600
+
+    fixing links
+
+[33mcommit 4c3edcf0ea8058308c1ff600c67417da64aa5827[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 12 20:26:57 2019 -0600
+
+    why
+
+[33mcommit af37854dc119c86c247ce602a0a912e023e664c2[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 12 20:25:09 2019 -0600
+
+    trying to get github io hosting to work
+
+[33mcommit 454ace2e6c7af42b1958bc51f8229a09668a6593[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 12 20:11:38 2019 -0600
+
+    Changed name from home to index
+
+[33mcommit 00a9e12ee726fc16432bc80c96008baa1a076862[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 12 17:41:28 2019 -0600
+
+    minor design changes to the about and home css
+
+[33mcommit 2b77ff0d37dd1dd63479a68313bc2d1a741bd191[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 5 19:32:53 2019 -0600
+
+    cleaning up text and design for the about page
+
+[33mcommit dcef94ad77f849312288fc554191f243fd68c31b[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 5 19:21:04 2019 -0600
+
+    more minor design edits to the home
+
+[33mcommit f8142abef8d157edbca9bd84bd2f8837ba8bb06d[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 5 19:06:13 2019 -0600
+
+    minor edits with both home and about pages
+
+[33mcommit 41eac54a3d997fd2415b0f418c9905f54c75798e[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 5 18:57:18 2019 -0600
+
+    borders for homepage
+
+[33mcommit f39e61f3b55b3553c003f8b7ecc063fc6df8161a[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Nov 5 18:53:20 2019 -0600
+
+    figured out the github io link - NO www!!!
+
+[33mcommit 2129d43e16d793a904abbda78dc0d6fb8aa3fcd2[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Oct 29 20:19:39 2019 -0500
+
+    added resume link and slight edits
+
+[33mcommit aa239c56e17c066cc402f806f9fc14acbee975fb[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Fri Sep 27 16:11:12 2019 -0500
+
+    Added a reset.css to my project and existing pages
+
+[33mcommit ad95ebccfe82cea5bdd3567933918e8d42d238dd[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Sat Sep 14 20:03:42 2019 -0500
+
+    edited about me page design
+
+[33mcommit ecc225217eadded7babc267a4df8edb1ff0c95d9[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Sat Sep 14 19:51:14 2019 -0500
+
+    cporrected content in my about me section of about page
+
+[33mcommit b735a50653c51f47b80e4ec77f3fa4918e5d2458[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Sep 11 21:08:55 2019 -0500
+
+    new media query for about and finishing up styling - need to rw write actual about
+
+[33mcommit 2a540e52a7bc6b96b5a212e209470b9874b445c9[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Sep 11 20:34:52 2019 -0500
+
+    getting styling down for my site and adding in content for about page
+
+[33mcommit a23ba36e019ee6f524be89cd463e1255156d8b47[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Sep 11 20:25:32 2019 -0500
+
+    new background for the rest of site - big me repeated would be overwhelming
+
+[33mcommit 33e225a23bf2f12a4a392b9fee4a39adfd590367[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Sep 11 20:13:36 2019 -0500
+
+    added default needed css for site's styling to about.css
+
+[33mcommit 452fd7ab2352ecceba44e9340353b393db40ac46[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Wed Sep 11 20:01:53 2019 -0500
+
+    added about page to site
+
+[33mcommit 13a577278742f31374516a3adfa947421ac4ea91[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Fri Sep 6 21:27:24 2019 -0500
+
+    finished up centering divs in mobile view
+
+[33mcommit cc9a616c66a6e59deec5541c8755e28beffd3a60[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Fri Sep 6 21:12:11 2019 -0500
+
+    finishing ujp touches with footer and nav in mobile view
+
+[33mcommit 4099cadec97513ef650fdb1dc0ca4d070dc6e1be[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Fri Sep 6 19:28:09 2019 -0500
+
+    Liking the general layout of this mobile media query
+
+[33mcommit c348358032c7efd1351cbd1594e0a11028c3cb6e[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Fri Sep 6 18:27:29 2019 -0500
+
+    added media query
+
+[33mcommit d59c65d0c3624635724a90645d9fd73d5d238759[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Thu Sep 5 18:30:39 2019 -0500
+
+    no borders
+
+[33mcommit 5f20b1a920d9d9e4a1c86c253570e5436942c63b[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Thu Sep 5 18:21:38 2019 -0500
+
+    greener and cleaner with github link
+
+[33mcommit fafc970ba21ff3ddd9ef8010bed6ad3adcd3d878[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Sep 3 18:13:06 2019 -0500
+
+    I really like the way this page is layed out right now
+
+[33mcommit a56cace010c460f7ebf1c66e9501e450afcd2f6f[m
+Author: Eddie Crochet <eddiecrochet1994@gmail.com>
+Date:   Tue Sep 3 17:31:21 2019 -0500
+
+    moving things around for desktop view
