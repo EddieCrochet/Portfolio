@@ -21,9 +21,9 @@ let translate = (english) => {
         for(let i = 0; i < wrd.length; i++){
             if(wrd[i] >'z' || wrd[i]<'a'){
                 charToRemove = wrd[i];
-
                 //I want to keep the hyphen or apostrophe in its original place, if encountered
-                if(charToRemove==='-'||"'") continue;
+                if(charToRemove===("-"||"'")) continue;
+                else
                 //puts non letter in designated array
                 nonLetters.push(charToRemove);
                 //actually removes non letter from original word for storage
@@ -35,7 +35,7 @@ let translate = (english) => {
         let vowelPos = wrd.search(/['a' 'e' 'i' 'o' 'u' 'y' 'A' 'E' 'I' 'O' 'U' 'Y']/);
     
         nonLetters = nonLetters.join();
-        console.log(nonLetters);
+        console.log(wrd);
         //join all non letters to string and remove the commas
         // REGULAR EXPRESSION in the replace to get it to do not only the first case but every instance of such
         nonLetters = nonLetters.replace(/,/g, '');
