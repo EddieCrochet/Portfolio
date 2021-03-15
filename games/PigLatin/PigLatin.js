@@ -22,8 +22,7 @@ let translate = (english) => {
             if(wrd[i] >'z' || wrd[i]<'a'){
                 charToRemove = wrd[i];
                 //I want to keep the hyphen or apostrophe in its original place, if encountered
-                if(charToRemove===("-"||"'")) continue;
-                else
+                if(charToRemove==="'"||charToRemove==="-") continue;
                 //puts non letter in designated array
                 nonLetters.push(charToRemove);
                 //actually removes non letter from original word for storage
