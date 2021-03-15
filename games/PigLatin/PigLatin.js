@@ -34,6 +34,12 @@ let translate = (english) => {
         // regex to find the vowel position is so much easier
         let vowelPos = wrd.search(/['a' 'e' 'i' 'o' 'u' 'y' 'A' 'E' 'I' 'O' 'U' 'Y']/);
     
+        nonLetters = nonLetters.join();
+        console.log(nonLetters);
+        //join all non letters to string and remove the commas
+        // REGULAR EXPRESSION in the replace to get it to do not only the first case but every instance of such
+        nonLetters = nonLetters.replace(/,/g, '');
+        console.log(nonLetters);
         if(wrd[0] === 'y'){
             // if the first letter is specifically a y
             firstPart = wrd.substring(0, 1);
