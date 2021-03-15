@@ -18,15 +18,12 @@ let translate = (english) => {
         
         // removes non letters from the END of the word and THEN runs the translation
         for(let i = 0; i < wrd.length; i++){
-            console.log(wrd[i]>'z'||wrd[i]<'a');
             if(wrd[i] >'z' || wrd[i]<'a'){
-                console.log(wrd[i]);
                 charToRemove = wrd[i];
                 //puts non letter in designated array
                 nonLetters.push(charToRemove);
                 //actually removes non letter from original word for storage
                 wrd = wrd.replace(charToRemove, "");
-                console.log(wrd);
             }
         }
 
