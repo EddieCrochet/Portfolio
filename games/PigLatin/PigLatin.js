@@ -21,6 +21,9 @@ let translate = (english) => {
         for(let i = 0; i < wrd.length; i++){
             if(wrd[i] >'z' || wrd[i]<'a'){
                 charToRemove = wrd[i];
+
+                //I want to keep the hyphen in its original place, if encountered
+                if(charToRemove==='-') continue;
                 //puts non letter in designated array
                 nonLetters.push(charToRemove);
                 //actually removes non letter from original word for storage
