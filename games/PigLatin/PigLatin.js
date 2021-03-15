@@ -2,6 +2,7 @@
 
 let convertBtn = document.getElementById('convertBtn');
 let userInput = document.getElementById('userInput');
+let pig = document.getElementById("piggy");
 //array variable to represent and add each new piglatin word to that we will eventually return
 let pigLatinArr = [];
 let pigLatinStr="";
@@ -18,21 +19,26 @@ let translate = (english) => {
         
         // removes non letters from the END of the word and THEN runs the translation
         for(let i = 0; i < wrd.length; i++){
-            console.log(wrd[i]>'z'||wrd[i]<'a');
             if(wrd[i] >'z' || wrd[i]<'a'){
-                console.log(wrd[i]);
                 charToRemove = wrd[i];
+                //I want to keep the hyphen or apostrophe in its original place, if encountered
+                if(charToRemove==="'"||charToRemove==="-") continue;
                 //puts non letter in designated array
                 nonLetters.push(charToRemove);
                 //actually removes non letter from original word for storage
                 wrd = wrd.replace(charToRemove, "");
-                console.log(wrd);
             }
         }
 
         // regex to find the vowel position is so much easier
         let vowelPos = wrd.search(/['a' 'e' 'i' 'o' 'u' 'y' 'A' 'E' 'I' 'O' 'U' 'Y']/);
     
+        nonLetters = nonLetters.join();
+        console.log(wrd);
+        //join all non letters to string and remove the commas
+        // REGULAR EXPRESSION in the replace to get it to do not only the first case but every instance of such
+        nonLetters = nonLetters.replace(/,/g, '');
+        console.log(nonLetters);
         if(wrd[0] === 'y'){
             // if the first letter is specifically a y
             firstPart = wrd.substring(0, 1);
@@ -56,12 +62,18 @@ let translate = (english) => {
             pigLatinArr.push(restOfWord + firstPart +"ay"+nonLetters);
         }
     });
+    // loop over the new array to print a nice organized sentence.
     for(let i = 0; i < pigLatinArr.length; i++){
         // doing this instead of a simpler join keeps the nonletters in the sentence as well as proper spaces
         pigLatinStr += ` ${pigLatinArr[i]}`
     }
+    printPig(pigLatinStr);
     console.log(pigLatinArr);
     console.log(pigLatinStr);
+};
+
+let printPig = (str) => {
+    pig.innerHTML=str;
 };
 
 convertBtn.addEventListener('click', function(){
