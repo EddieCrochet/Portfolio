@@ -22,6 +22,7 @@ const init = function() {
     playing = true;
     document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner');
         // Starting conditions
+    player0El.classList.add('player--active');
     score0El.textContent = 0;
     score1El.textContent = 0;
     current0El.textContent = 0;
