@@ -1,13 +1,21 @@
 'use strict';
 
 let convertBtn = document.getElementById('convertBtn');
+let resetBtn = document.getElementById('resetBtn');
 let userInput = document.getElementById('userInput');
 let pig = document.getElementById("piggy");
 //array variable to represent and add each new piglatin word to that we will eventually return
-let pigLatinArr = [];
-let pigLatinStr="";
+let pigLatinArr;
+let pigLatinStr;
 
-let translate = (english) => {
+const init = () => {
+    pigLatinArr = [];
+    pigLatinStr = "";
+    pig.innerHTML="";
+};
+init();
+
+const translate = (english) => {
     //code that will run to translate each individual word
     english.forEach(word => {
         //only convert to lowercase, we will change first letter to capital later on
@@ -72,7 +80,7 @@ let translate = (english) => {
     console.log(pigLatinStr);
 };
 
-let printPig = (str) => {
+const printPig = (str) => {
     pig.innerHTML=str;
 };
 
@@ -85,4 +93,10 @@ convertBtn.addEventListener('click', function(){
 
     // call the function that will actually translate
     translate(englishArr);
+});
+
+//Adding a reset button to reset all the words from the display and the translator,
+//in order to accomplish multiple translations...
+resetBtn.addEventListener('click', function(){
+    init();
 });
