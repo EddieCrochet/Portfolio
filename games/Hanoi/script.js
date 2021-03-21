@@ -17,6 +17,9 @@ function onDragOver(ev) {
 }
 
 function onDrop(ev) {
+    // Below points to the drop object's first class name!
+    // This is designed to be either 'tower' or 'block' to help with logic :)
+    console.log(ev.path[0].classList[0]);
     const id = ev.dataTransfer.getData('text');
     const draggableEl = document.getElementById(id);
     const dropzone = ev.target;
