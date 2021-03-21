@@ -2,7 +2,7 @@
 
 const t3 = document.getElementsByClassName("t3")[0];
 
-function onDragStart(ev) {
+const onDragStart = (ev) => {
     const fromTower = ev.target.parentNode.children;
     //first rule about which block you are allowed to move
     if(fromTower[0] === ev.target){
@@ -12,7 +12,7 @@ function onDragStart(ev) {
     }
 }
 
-function onDragOver(ev) {
+const onDragOver = (ev) => {
     ev.preventDefault();
 }
 
@@ -33,7 +33,7 @@ const isLegal = (ev) => {
     else return false;
 };
 
-function onDrop(ev) {
+const onDrop = (ev) => {
     const id = ev.dataTransfer.getData('text');
     const draggableEl = document.getElementById(id);
     const dropzone = ev.target;
