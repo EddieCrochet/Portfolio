@@ -3,16 +3,12 @@ html {
 }
 body {
     font-family: Arial, Helvetica;
-    background: linear-gradient(#b3b6b9, #7698b4);
+    background: linear-gradient(#b3b6b9, #7698b4) no-repeat center fixed;
 }
 main{
     margin:30px;
-    display:grid;
-    grid-template-columns: repeat(5, 20% [col-start]);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        " . article . . . "
-        " . . . section . ";
+    display:flex;
+    justify-content:space-around;
 }
 textarea {
     outline:none;
@@ -40,11 +36,4 @@ button {
 button:hover {
     background-color:#ffffcc;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-article{
-    grid-area: article;
-}
-section{
-    grid-area: section;
-    margin-top: -200px;
 }
