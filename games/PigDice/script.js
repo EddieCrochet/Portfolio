@@ -12,13 +12,13 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
-let scores, currentScore, activePlayer, playing;
+let scores, currentScore, playing;
+let activePlayer = 0;
 
 const init = function() {
     //array of player 1 and player 2s respective scores
     scores = [0, 0];
     currentScore = 0;
-    activePlayer = 0;
     playing = true;
     document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner');
         // Starting conditions
