@@ -13,11 +13,23 @@ body{
     grid-template-areas: 
       "one . ."
       ". two ."
-      ". .v three"
-      ". foot foot .";
+      ". . three"
+      ". foot .";
+  }
+  .one{
+    grid-area: one;
+  }
+  .two{
+    grid-area: two;
+  }
+  .three{
+    grid-area: three;
   }
   nav{
     text-align: center;
+  }
+  footer{
+    grid-area: foot;
   }
   .nav{
     color:white;
