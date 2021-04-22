@@ -26,6 +26,9 @@ body{
     border-radius: 15px;
     border: 1px solid purple;
     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   ul{
     list-style-type: none;
