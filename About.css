@@ -5,9 +5,6 @@ body{
   background-size: cover;
   font-family: Verdana,Geneva,sans-serif;
 }
-main{
-  color:white;
-}
 nav{
   text-align: center;
 }
@@ -62,6 +59,7 @@ main{
   justify-content: center;
   flex-direction: column;
   padding:20px;
+  font-size:25px;
 }
 .foot{
   grid-area:foot;

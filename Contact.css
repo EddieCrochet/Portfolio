@@ -6,7 +6,6 @@ body{
     font-family: Verdana,Geneva,sans-serif;
   }
   main{
-    color:white;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto, auto, auto, 15%;
@@ -46,9 +45,8 @@ body{
     border-radius: 15px;
     border: 1px solid purple;
     margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 15px;
+    font-size: 18px;
   }
   ul{
     list-style-type: none;
