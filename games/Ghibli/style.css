@@ -1,0 +1,57 @@
+body{
+  background-color:rgb(214, 255, 143);
+}
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    cursor: pointer;
+}
+  
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
+
+#back{
+    display:none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.card {
+    margin: 1rem;
+    padding: 2rem;
+    background-image: radial-gradient(rgb(217, 119, 255) , rgb(214, 255, 143));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+#movieDeets{
+    background-image: radial-gradient(rgb(170, 255, 137), rgb(214, 255, 143));
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    list-style-type: none;
+}
+  
+@media screen and (max-width: 900px) {
+    .card {
+      flex: 1 1 50%;
+    }
+}
+  
+@media screen and (min-width: 900px) {
+    .card {
+      flex: 1 1 33%;
+    }
+}
