@@ -15,6 +15,9 @@ body{
       ". . three"
       ". foot .";
   }
+  .ghibliPic, .rpsPic, .tttPic, .dicePic, .latinPic, .hanoiPic{
+    width: 60%;
+  }
   .one{
     grid-area: one;
   }
@@ -57,6 +60,17 @@ body{
     text-align: center;
     width:35%;
     border: 1px solid purple;
+  }
+  .gameList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .gameList>li>a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: row;
   }
 
   @media (max-width: 1150px){
